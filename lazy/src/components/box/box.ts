@@ -4,13 +4,16 @@ import { Component } from '@angular/core';
   selector: 'box',
   templateUrl: 'box.html'
 })
-export class BoxComponent {
+class BoxComponent {
 
   text: string;
+  idade: number;
 
   constructor() {
     console.log('Sou o console log do component inserido ae');
-    this.text = 'Componente Criado';
+    this.idade = 12;
+    this.text = 'Componente Criado';    
   }
 
 }
+export { BoxComponent }
