@@ -8,9 +8,9 @@ import { IonicPageModule } from 'ionic-angular';
 @NgModule({
     
     declarations: [ 
-        HomePage
+        HomePage,        
     ],
-    imports: [
+    imports: [  
         //Precisamos usar o IonicPageModule para ativar o lazy-loader
         IonicPageModule.forChild(HomePage)
     ],   

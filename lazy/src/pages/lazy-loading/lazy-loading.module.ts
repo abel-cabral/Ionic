@@ -1,3 +1,4 @@
+import { BoxComponent } from './../../components/box/box';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LazyLoadingPage } from './lazy-loading';
@@ -6,6 +7,8 @@ import { LazyLoadingPage } from './lazy-loading';
 @NgModule({
   declarations: [
     LazyLoadingPage,
+    //No module de quem ira receber nosso custom component devemos chamar o nome dele em declarations
+    BoxComponent
   ],
   imports: [
     //Pagina que vai ser carregada por demanda

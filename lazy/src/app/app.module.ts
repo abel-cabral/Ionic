@@ -11,8 +11,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
+
+  //Declaretion recebe componets, pipes, diretivas e paginas, sendo paginas obrigatorio especificar em entryComponents
   declarations: [
     MyApp,
+
     //Por estar usando Lazy Loading, nao precisamos chamar ela aqui, lembre-se 2 chamadas dá erro no angular
     //HomePage,
     //ListPage,    
@@ -36,7 +39,7 @@ import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@a
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     //Por padrao o angular vem com o hash configurado, entao trocamos pelo abaixo para usarmos / como principal divisor
-    {provide: LocationStrategy, useClass: PathLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ]
 })
 export class AppModule {}

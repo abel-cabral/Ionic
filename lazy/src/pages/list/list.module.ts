@@ -6,7 +6,7 @@ import { ListPage } from './list';
 @NgModule({
     imports: [
         //Precisamos usar o IonicPageModule para ativar o lazy-loader
-        IonicPageModule.forChild(ListPage)
+        IonicPageModule.forChild(ListPage),        
     ],
     declarations: [ListPage],
 })
